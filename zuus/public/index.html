@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "myapp">
+<head>
+  <meta charset="UTF-8">
+  <title>Employees</title>
+</head>
+<body>
+
+<div ng-controller = "employeeController">
+  <div ng-repeat = "employee in employees">
+    {{employee.name}}
+  </div>
+
+<button ng-click = "showEmployed()">Show Employed</button>
+
+<div ng-repeat ="employee in employed">
+  {{employee}}
+</div>
+
+</div>
+
+
+
+</body>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.js"></script>
+<script src = "app.js"></script>
+</html>
